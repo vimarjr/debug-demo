@@ -56,6 +56,16 @@ function tester() {
     } else {
         console.log("testD is correct");
     }
+    
+    console.log("\n")
+
+    const testE = getEvenFibonacciNumbers(2);
+    console.log("testE, 2 even fibo", testE);
+    if(JSON.stringify(testE) !== JSON.stringify([0, 2])) {
+        console.log("testE is wrong");
+    } else {
+        console.log("testE is correct");
+    }
 }
 
 tester();
