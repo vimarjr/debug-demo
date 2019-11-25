@@ -1,12 +1,12 @@
 
-n getEvenFibonacciNumbers(size) {
+function getEvenFibonacciNumbers(size) {
     const allFiboList = [0, 1];
     const evenFiboList = [0];
     if(size < 3) {
         return evenFiboList.slice(0, size);
     }
 
-    while(evenFiboList.length < size) {
+    while(evenFiboList.size < size) {
         const nextFiboNumber = allFiboList[allFiboList.length - 1] + allFiboList[allFiboList.length - 2];
         allFiboList.push(nextFiboNumber);
 
