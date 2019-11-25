@@ -50,7 +50,7 @@ function tester() {
     console.log("\n")
 
     const testD = getEvenFibonacciNumbers(0);
-    console.log("testD, 5 even fibo", testD);
+    console.log("testD, 0 even fibo", testD);
     if(JSON.stringify(testD) !== JSON.stringify([])) {
         console.log("testD is wrong");
     } else {
